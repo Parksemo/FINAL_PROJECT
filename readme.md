@@ -24,6 +24,9 @@ UTDdata2 : 웹크롤링으로 현재의 데이터를 업데이트 한다.(이전
 2. 각 칼럼의 데이터 타입을 정수형으로 변환
 3. MInMaxScaler로 칼럼 별 정규화
 
+main.py : 하루에 한번 최신화 작업을 위한 매크로 파이썬 코드
+
+
 
 TomorrowPredict : 내일 업종별 주가를 예측한다.
 출력) pred_dic.pickle
