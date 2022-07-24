@@ -1,45 +1,24 @@
-'''
+import schedule
+import time
 import import_ipynb
 
-import UTDdata2
-import 전처리2
-import TomorrowPredict
-'''
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
-
-
-from flask import Flask, jsonify
-import sys
-import random
-import pickle
-with open('pred_dic.pickle','rb') as f:
-    pred_dic = pickle.load(f)
-application = Flask(__name__)
+#스케쥴 모듈이 동작시킬 코드 : 현재 시간 출력
+def test_function():
+    print("최신 데이터 받고 내일 업종별 주가 방향 예측 ")
+    import UTDdata2
+    import 전처리2
+    import TomorrowPredict
+    
+    
+#매일 특정시간에 동작
+#07:00+ 9시간 = 16시
+schedule.every().day.at('07:00').do(test_function)
 
 
-
-@application.route("/random", methods=["POST"])
-def random_function():
-    response = {
-        "version": "2.0",
-        "template": {
-            "outputs": [
-                {
-                    "simpleText" : {
-                        "text": pred_dic['Food']
-                    }
-                }
-            ]
-        } 
-    }
-    return jsonify(response)
+#무한 루프를 돌면서 스케쥴을 유지한다.
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
 
-if __name__ == "__main__":
-    application.run(host='0.0.0.0', port=int(sys.argv[1]), debug=True)
-
-
-# In[ ]:
