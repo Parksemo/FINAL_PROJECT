@@ -26,6 +26,8 @@ UTDdata2 : 웹크롤링으로 현재의 데이터를 업데이트 한다.(이전
 
 main.py : 하루에 한번 최신화 작업을 위한 매크로 파이썬 코드
 
+applpication.py : 카카오 챗봇에서 요청을 받고 데이터를 응답해주기 위한 파일
+
 
 
 TomorrowPredict : 내일 업종별 주가를 예측한다.
@@ -41,3 +43,4 @@ TomorrowPredict : 내일 업종별 주가를 예측한다.
 6. Models : 모델의 체크포인트 파일이 저장 디렉터리
 7. history_dic : 각 업종별로 학습과정의 loss와 val_loss를 히스토그램으로 저장되어있다.
 8. pred_dict : 각 업종별로 내일의 주식의 상향/하향을 예측한 문자열을 가진다.
+9. logfile.log : 백그라운드로 실행된 main.py의 기록이 저장된 로그파일
