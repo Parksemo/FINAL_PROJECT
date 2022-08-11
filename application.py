@@ -40,7 +40,7 @@ def redflavor():
               "title": "음식료품, 섬유의복",
               "description": set_d+" 일자 업종 시세 예상 추이 확인",
               "thumbnail": {
-                "imageUrl": "https://github.com/Parksemo/Parksemo/blob/master/image/%EC%9D%8C%EC%8B%9D%EB%A3%8C%ED%92%88,%EC%84%AC%EC%9C%A0%EC%9D%98%EB%B3%B5.png?raw=true"
+                "imageUrl": "https://github.com/97danielj/stock_api/blob/master/CarouselImages/Clothing-Food.png?raw=true"
               },
               "buttons": [
                 {
@@ -59,7 +59,7 @@ def redflavor():
               "title": "화학, 의약품",
               "description": set_d+" 일자 업종 시세 예상 추이 확인",
               "thumbnail": {
-                "imageUrl": "https://github.com/Parksemo/Parksemo/blob/master/image/%ED%99%94%ED%95%99,%EC%9D%98%EC%95%BD%ED%92%88.png?raw=true"
+                "imageUrl": "https://github.com/97danielj/stock_api/blob/master/CarouselImages/Medicine-Chemical.png?raw=true"
               },
               "buttons": [
                 {
@@ -78,7 +78,7 @@ def redflavor():
               "title": "비금속광물, 철강금속",
               "description": set_d+" 일자 업종 시세 예상 추이 확인",
               "thumbnail": {
-                "imageUrl": "https://github.com/Parksemo/Parksemo/blob/master/image/%EB%B9%84%EA%B8%88%EC%86%8D%EA%B4%91%EB%AC%BC,%EC%B2%A0%EA%B0%95%EA%B8%88%EC%86%8D.png?raw=true"
+                "imageUrl": "https://github.com/97danielj/stock_api/blob/master/CarouselImages/Metal-NonMetal.png?raw=true"
               },
               "buttons": [
                 {
@@ -97,7 +97,7 @@ def redflavor():
               "title": "기계, 전기전자",
               "description": set_d+" 일자 업종 시세 예상 추이 확인",
               "thumbnail": {
-                "imageUrl": "https://github.com/Parksemo/Parksemo/blob/master/image/%EA%B8%B0%EA%B3%84,%EC%A0%84%EA%B8%B0%EC%A0%84%EC%9E%90.png?raw=true"
+                "imageUrl": "https://github.com/97danielj/stock_api/blob/master/CarouselImages/Electronic-Machine.png?raw=true"
               },
               "buttons": [
                 {
@@ -116,7 +116,7 @@ def redflavor():
               "title": "건설업, 운수창고",
               "description": set_d+" 일자 업종 시세 예상 추이 확인",
               "thumbnail": {
-                "imageUrl": "https://github.com/Parksemo/Parksemo/blob/master/image/%EA%B1%B4%EC%84%A4%EC%97%85,%EC%9A%B4%EC%88%98%EC%B0%BD%EA%B3%A0.png?raw=true"
+                "imageUrl": "https://github.com/97danielj/stock_api/blob/master/CarouselImages/Transport-Construction.png?raw=true"
               },
               "buttons": [
                 {
@@ -135,7 +135,7 @@ def redflavor():
               "title": "유통업, 전기가스업",
               "description": set_d+" 일자 업종 시세 예상 추이 확인",
               "thumbnail": {
-                "imageUrl": "https://github.com/Parksemo/Parksemo/blob/master/image/%EC%9C%A0%ED%86%B5%EC%97%85,%EC%A0%84%EA%B8%B0%EA%B0%80%EC%8A%A4%EC%97%85.png?raw=true"
+                "imageUrl": "https://github.com/97danielj/stock_api/blob/master/CarouselImages/Power-Distribution.png?raw=true"
               },
               "buttons": [
                 {
@@ -154,7 +154,7 @@ def redflavor():
               "title": "통신업, 금융업",
               "description": set_d+" 일자 업종 시세 예상 추이 확인",
               "thumbnail": {
-                "imageUrl": "https://github.com/Parksemo/Parksemo/blob/master/image/%ED%86%B5%EC%8B%A0%EC%97%85,%EA%B8%88%EC%9C%B5%EC%97%85.png?raw=true"
+                "imageUrl": 'https://github.com/97danielj/stock_api/blob/master/CarouselImages/Finance-Tele.png?raw=true'
               },
               "buttons": [
                 {
@@ -173,7 +173,7 @@ def redflavor():
               "title": "증권, 보험",
               "description": set_d+" 일자 업종 시세 예상 추이 확인",
               "thumbnail": {
-                "imageUrl": "https://github.com/Parksemo/Parksemo/blob/master/image/%EC%A6%9D%EA%B6%8C,%EB%B3%B4%ED%97%98.png?raw=true"
+                "imageUrl": "https://github.com/97danielj/stock_api/blob/master/CarouselImages/Insure-Brokerage.png?raw=true"
               },
               "buttons": [
                 {
@@ -192,7 +192,7 @@ def redflavor():
               "title": "서비스업, 제조업",
               "description": set_d+" 일자 업종 시세 예상 추이 확인",
               "thumbnail": {
-                "imageUrl": "https://github.com/Parksemo/Parksemo/blob/master/image/%EC%84%9C%EB%B9%84%EC%8A%A4%EC%97%85,%EC%A0%9C%EC%A1%B0%EC%97%85.png?raw=true"
+                "imageUrl": "https://github.com/97danielj/stock_api/blob/master/CarouselImages/Manufacturer-Service.png?raw=true"
               },
               "buttons": [
                 {
@@ -236,7 +236,7 @@ def sector():
             "outputs": [
                 {
                     "simpleText": {
-                        "text": set_d + pred_dic[answer]
+                        "text": set_d + '일자 ' + pred_dic[answer]
                     }
                 }
             ]
