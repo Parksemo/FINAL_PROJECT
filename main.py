@@ -6,8 +6,8 @@ import import_ipynb
 #스케쥴 모듈이 동작시킬 코드 : 현재 시간 출력
 def test_function():
     print("최신 데이터 받고 내일 업종별 주가 방향 예측 ")
-    import UTDdata2
-    import 전처리2
+    import UTDdata
+    import 전처리
     import TomorrowPredict
     
     
